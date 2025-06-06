@@ -67,7 +67,7 @@ export const BurgerIngredients: FC = () => {
 
   // Если произошла ошибка, отображаем сообщение об ошибке
   if (error) {
-    return <div>Ошибка: {error}</div>;
+    return <div>Ошибкdsfsfdsdfа: {error}</div>;
   }
 
   // Возвращаем UI-компонент с ингредиентами
