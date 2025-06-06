@@ -60,16 +60,14 @@ export const BurgerIngredients: FC = () => {
       titleSaucesRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // Если данные загружаются, отображаем индикатор загрузки
-  if (loading) {
-    return <div>Загрузка...</div>;
-  }
-
   // Если произошла ошибка, отображаем сообщение об ошибке
   if (error) {
     return <div>Ошибкdsfsfdsdfа: {error}</div>;
   }
-
+  // Если данные загружаются, отображаем индикатор загрузки
+  if (loading) {
+    return <div>Загрузка...</div>;
+  }
   // Возвращаем UI-компонент с ингредиентами
   return (
     <BurgerIngredientsUI
