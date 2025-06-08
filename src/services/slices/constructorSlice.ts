@@ -40,7 +40,7 @@ export const initialState: ConstructorState = {
 // Создаем асинхронное действие для заказа бургера
 export const getOrderBurger = createAsyncThunk(
   'user/newUser Order',
-  async (data: string[]) => await orderBurgerApi(data)
+  orderBurgerApi
 );
 
 // Функция для перемещения ингредиента в массиве

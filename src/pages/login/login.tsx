@@ -4,12 +4,10 @@ import { FC, SyntheticEvent, useState } from 'react';
 import { LoginUI } from '@ui-pages';
 // Импортируем компонент для навигации из react-router-dom
 import { Navigate } from 'react-router-dom';
-// Импортируем хук useSelector из react-redux для доступа к состоянию Redux
-import { useSelector } from 'react-redux';
+// Импортируем хук useSelector и useDispatch из локального хранилища Redux
+import { useSelector, useDispatch } from '../../services/store';
 // Импортируем селекторы и действия из среза пользователя
 import { getLoginUser, getUserState } from '../../services/slices/userSlice';
-// Импортируем хук useDispatch из локального хранилища Redux
-import { useDispatch } from '../../services/store';
 
 // Компонент страницы логина
 export const Login: FC = () => {
