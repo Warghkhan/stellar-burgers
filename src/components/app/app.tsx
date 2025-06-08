@@ -33,7 +33,7 @@ import {
 } from '@components';
 
 import { useDispatch } from '../../services/store';
-import { getUser } from '../../services/slices/userSlice';
+import { checkUser, getUser } from '../../services/slices/userSlice';
 import { getIngredients } from '../../services/slices/ingredientSlice';
 
 const App = () => {
@@ -44,7 +44,7 @@ const App = () => {
 
   useEffect(() => {
     dispatch(getIngredients());
-    dispatch(getUser());
+    dispatch(getUser()).finally(() => dispatch(checkUser()));
   }, [dispatch]);
 
   return (

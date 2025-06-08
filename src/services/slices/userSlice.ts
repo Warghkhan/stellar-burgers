@@ -98,6 +98,10 @@ export const userSlice = createSlice({
     // Сброс ошибок
     resetError: (state) => {
       state.error = null;
+    },
+    // Сброс ошибок
+    checkUser: (state) => {
+      state.isAuthChecked = true;
     }
   },
   extraReducers: (builder) => {
@@ -105,20 +109,20 @@ export const userSlice = createSlice({
     builder.addCase(getRegisterUser.pending, (state) => {
       state.request = true;
       state.error = null;
-      state.isAuthChecked = true;
+      // state.isAuthChecked = true;
       state.isAuthenticated = false;
     });
     builder.addCase(getRegisterUser.rejected, (state, action) => {
       state.request = false;
       state.error = action.error.message as string;
-      state.isAuthChecked = false;
+      // state.isAuthChecked = false;
     });
     builder.addCase(getRegisterUser.fulfilled, (state, action) => {
       state.request = false;
       state.error = null;
       state.response = action.payload.user;
       state.user = action.payload.user;
-      state.isAuthChecked = false;
+      // state.isAuthChecked = false;
       state.isAuthenticated = true;
     });
 
@@ -126,32 +130,32 @@ export const userSlice = createSlice({
     builder.addCase(getLoginUser.pending, (state) => {
       state.loginUserRequest = true;
       state.error = null;
-      state.isAuthChecked = true;
+      //  state.isAuthChecked = true;
       state.isAuthenticated = false;
     });
     builder.addCase(getLoginUser.rejected, (state, action) => {
       state.loginUserRequest = false;
       state.error = action.error.message as string;
-      state.isAuthChecked = false;
+      // state.isAuthChecked = false;
     });
     builder.addCase(getLoginUser.fulfilled, (state, action) => {
       state.loginUserRequest = false;
       state.error = null;
       state.user = action.payload.user;
-      state.isAuthChecked = true;
+      // state.isAuthChecked = true;
       state.isAuthenticated = true;
     });
 
     // Обработка получения пользователя
     builder.addCase(getUser.pending, (state) => {
-      state.isAuthChecked = false;
+      //  state.isAuthChecked = false;
     });
     builder.addCase(getUser.rejected, (state) => {
       state.isAuthChecked = true;
       state.isAuthenticated = false;
     });
     builder.addCase(getUser.fulfilled, (state, action) => {
-      state.isAuthChecked = true;
+      //  state.isAuthChecked = true;
       state.user = action.payload.user;
       state.isAuthenticated = true;
     });
@@ -175,20 +179,20 @@ export const userSlice = createSlice({
     builder.addCase(getLogoutUser.pending, (state) => {
       state.request = true;
       state.error = null;
-      state.isAuthChecked = true;
+      // state.isAuthChecked = true;
       state.isAuthenticated = false;
     });
     builder.addCase(getLogoutUser.rejected, (state, action) => {
       state.request = false;
       state.error = action.error.message as string;
-      state.isAuthChecked = false;
+      //   state.isAuthChecked = false;
       state.isAuthenticated = true;
     });
     builder.addCase(getLogoutUser.fulfilled, (state) => {
       state.request = false;
       state.error = null;
       state.user = null;
-      state.isAuthChecked = true;
+      //  state.isAuthChecked = true;
       state.isAuthenticated = false;
     });
 
@@ -210,6 +214,6 @@ export const userSlice = createSlice({
 });
 
 // Экспорт редьюсеров и селекторов
-export const { userLogout, resetError } = userSlice.actions;
+export const { userLogout, resetError, checkUser } = userSlice.actions;
 export const getUserState = (state: RootState): UserState => state.user;
 export default userSlice.reducer;
