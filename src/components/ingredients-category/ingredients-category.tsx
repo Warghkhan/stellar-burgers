@@ -1,3 +1,4 @@
+////.src/components/ingredients-category/ingredients-category.tsx
 // Импортируем необходимые хуки и типы из React
 import { forwardRef, useMemo } from 'react';
 // Импортируем тип для пропсов категории ингредиентов

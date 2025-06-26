@@ -1,3 +1,4 @@
+//.src/services/slices/constructorSlice.ts
 // Импортируем необходимые функции и типы из Redux Toolkit
 import {
   createAsyncThunk,

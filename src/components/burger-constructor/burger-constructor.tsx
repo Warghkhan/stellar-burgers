@@ -1,3 +1,4 @@
+//.src/components/burger-constructor/burger-constructor.tsx
 // Импортируем необходимые хуки и компоненты из React
 import { FC, useMemo } from 'react';
 // Импортируем типы и утилиты

@@ -1,3 +1,4 @@
+////.src/components/protected-route/protected-route.tsx
 // Импортируем необходимые компоненты и хуки из React Router
 import { Navigate, Outlet, useLocation } from 'react-router-dom';
 // Импортируем хук useSelector для доступа к состоянию Redux

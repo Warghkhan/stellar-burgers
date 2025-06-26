@@ -1,3 +1,4 @@
+//.src/components/burger-constructor/burger-constructor-element.tsx
 // Импортируем React и оптимизацию мемоизации
 import { FC, memo } from 'react';
 // Импортируем UI-компонент для элемента конструктора бургера

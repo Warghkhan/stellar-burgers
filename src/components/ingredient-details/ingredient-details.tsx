@@ -1,3 +1,4 @@
+//.src/components/ingredient-details/ingredient-details.tsx
 // Импортируем тип FC для функционального компонента из React
 import { FC } from 'react';
 // Импортируем компонент индикатора загрузки

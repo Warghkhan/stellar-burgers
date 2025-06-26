@@ -1,3 +1,4 @@
+//.src/services/slices/userSlice.ts
 // Импорты из Redux Toolkit для создания слайса и асинхронных операций
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 

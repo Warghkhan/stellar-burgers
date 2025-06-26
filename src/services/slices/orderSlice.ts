@@ -1,3 +1,4 @@
+//.src/services/slices/orderSlice.ts
 // Импорт API для получения заказа по номеру
 import { getOrderByNumberApi } from '@api';
 

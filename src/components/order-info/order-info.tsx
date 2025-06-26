@@ -1,3 +1,4 @@
+//.src/components/order-info/order-info.tsx
 // Импортируем необходимые хуки и типы из React
 import { FC, useEffect, useMemo } from 'react';
 // Импортируем UI-компоненты для отображения прелоадера и информации о заказе

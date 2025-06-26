@@ -1,3 +1,4 @@
+//.src/components/burger-ingredients.tsx
 // Импортируем необходимые хуки и компоненты из React
 import { useState, useRef, useEffect, FC } from 'react';
 import { useInView } from 'react-intersection-observer';

@@ -1,3 +1,4 @@
+//.src/components/burger-ingredient/burger-ingredient.tsx
 // Импортируем необходимые хуки и компоненты из React
 import { FC, memo } from 'react';
 import { useLocation } from 'react-router-dom';

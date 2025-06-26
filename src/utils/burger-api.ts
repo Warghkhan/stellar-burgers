@@ -1,3 +1,4 @@
+//.src/utils/burger-api.ts
 // Импорт функций для работы с куками
 import { setCookie, getCookie } from './cookie';
 // Импорт типов данных для ингредиентов, заказов и пользователей
@@ -92,6 +93,39 @@ export const getIngredientsApi = () =>
       if (data?.success) return data.data; // Возвращаем данные об ингредиентах
       return Promise.reject(data); // Обработка ошибки
     });
+
+// Функция для получения ингредиентов и сохранения json с ингридиентами
+/*
+  export const getIngredientsApi = () =>
+  fetch(`${process.env.BURGER_API_URL}/ingredients`)
+    .then((res) => checkResponse<TIngredientsResponse>(res))
+    .then((data) => {
+      if (data?.success) {
+        const ingredientsData = data.data;
+
+        // Создаем Blob с данными в формате JSON
+        const blob = new Blob([JSON.stringify(ingredientsData, null, 2)], {
+          type: 'application/json'
+        });
+
+        // Используем window.URL для генерации ссылки
+        const url = window.URL.createObjectURL(blob);
+
+        // Создаём ссылку и "скачиваем" файл
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'ingredients.json';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link); // Убираем элемент после клика
+
+        window.URL.revokeObjectURL(url); // Очищаем память
+
+        return ingredientsData;
+      }
+      return Promise.reject(data);
+    });
+  */
 
 // Функция для получения всех заказов
 export const getFeedsApi = () =>

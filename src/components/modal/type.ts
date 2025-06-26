@@ -1,3 +1,4 @@
+////.src/components/modal/type.ts
 import { ReactNode } from 'react';
 
 export type TModalProps = {

@@ -1,3 +1,4 @@
+//.src/components/profile-menu/profile-menu.tsx
 // Импортируем необходимые хуки и компоненты из React и React Router
 import { FC } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';

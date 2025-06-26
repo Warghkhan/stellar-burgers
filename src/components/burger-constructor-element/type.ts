@@ -1,3 +1,4 @@
+//.src/components/burger-constructor/type.ts
 import { TConstructorIngredient } from '@utils-types';
 
 export type BurgerConstructorElementProps = {

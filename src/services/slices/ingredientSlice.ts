@@ -1,3 +1,4 @@
+//.src/services/slices/ingredientSlice.ts
 // Импортируем тип ингредиента
 import { TIngredient } from '@utils-types';
 // Импортируем функции для создания срезов состояния и асинхронных действий из Redux Toolkit

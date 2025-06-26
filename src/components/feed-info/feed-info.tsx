@@ -1,3 +1,4 @@
+//.src/components/feed-info/feed-info.tsx
 // Импортируем необходимые типы и компоненты
 import { TOrder } from '@utils-types'; // Тип для заказа
 import { FeedInfoUI } from '../ui/feed-info'; // UI-компонент для отображения информации о заказах

@@ -1,3 +1,4 @@
+//.src/services/store.ts
 // Импорт хуков из react-redux для использования в компонентах
 import {
   TypedUseSelectorHook,

@@ -1,3 +1,4 @@
+//.src/services/slices/feedSlice.ts
 // Импортируем API для получения ленты заказов
 import { getFeedsApi } from '@api';
 // Импортируем функции для создания асинхронных действий и срезов состояния из Redux Toolkit

@@ -1,3 +1,4 @@
+//.src/components/order-card/order-card.tsx
 // Импортируем тип FC, memo и хук useMemo из React
 import { FC, memo, useMemo } from 'react';
 // Импортируем хук useLocation для получения текущего маршрута
