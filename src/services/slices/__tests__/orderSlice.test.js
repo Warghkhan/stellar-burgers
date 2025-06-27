@@ -1,6 +1,6 @@
 //src/services/slices/__tests__/orderSlice.test.ts
-import { getOrderByNumber } from '../orderSlice';
-import orderReducer, { initialState } from '../orderSlice';
+
+import orderReducer, { getOrderByNumber, initialState } from '../orderSlice';
 
 // Mock-данные
 const mockOrder = {

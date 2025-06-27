@@ -1,6 +1,8 @@
 // src/services/slices/__tests__/ingredientSlice.test.ts
-import { getIngredients } from '../ingredientSlice';
-import ingredientReducer, { initialState } from '../ingredientSlice';
+import ingredientReducer, {
+  initialState,
+  getIngredients
+} from '../ingredientSlice';
 
 const ingredientsMockData = [
   {

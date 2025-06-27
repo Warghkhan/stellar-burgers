@@ -1,6 +1,6 @@
 //src/services/slices/__tests__/feedSlice.test.ts
-import { getFeeds } from '../feedSlice';
-import feedReducer, { initialState } from '../feedSlice';
+
+import feedReducer, { getFeeds, initialState } from '../feedSlice';
 
 // Mock-данные
 const feedsMockData = {

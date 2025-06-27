@@ -1,14 +1,13 @@
 //src/services/slices/__tests__/userSlice.test.ts
-import {
+import userReducer, {
   getRegisterUser,
   getLoginUser,
   getLogoutUser,
   getUser,
   updateUser,
-  getOrders
+  getOrders,
+  initialState
 } from '../userSlice';
-
-import userReducer, { initialState } from '../userSlice';
 
 // Mock-данные
 const userMockData = {

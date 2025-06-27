@@ -1,13 +1,12 @@
 //src/services/slices/__tests__/constructorSlice.test.ts
-import {
+import constructorReducer, {
   addIngredientToConstructor,
   removeIngredientFromConstructor,
   moveIngredientUp,
   moveIngredientDown,
-  resetConstructor
+  resetConstructor,
+  initialState
 } from '../../slices/constructorSlice';
-
-import constructorReducer from '../../slices/constructorSlice';
 
 // Mock-данные
 const bunMockData = {
@@ -53,18 +52,6 @@ const ingredient2MockData = {
   image_mobile: 'https://code.s3.yandex.net/react/code/meat-01-mobile.png ',
   image_large: 'https://code.s3.yandex.net/react/code/meat-01-large.png ',
   __v: 0
-};
-
-// Начальное состояние (повторяет initialState из slice)
-const initialState = {
-  constructorItems: {
-    bun: null,
-    ingredients: []
-  },
-  orderRequest: false,
-  orderModalData: null,
-  loading: false,
-  error: null
 };
 
 describe('Тестирование constructorSlice', () => {
